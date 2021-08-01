@@ -1,0 +1,12 @@
+{
+  "name": "react-project-starter",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "mustache": "^4.2.0",
+    "yargs": "^17.0.1"
+  }
+}
