@@ -5,15 +5,15 @@ Create a new minimal react project. Mustache template files in `/template` are r
 ### Initialize
 
 ```
-npm i
+pnpm i
 ```
 
 ### Run
 
 ```
-npm start -- [options]
+pnpm start [options]
 ```
 List possible options:
 ```
-npm start -- --help
+pnpm start --help
 ```
