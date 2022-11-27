@@ -77,7 +77,7 @@ async function main() {
     .strict()
     .argv;
 
-  const params = new ProjectParams(argv, `npm start -- ${hideBin(process.argv).join(' ')}`);
+  const params = new ProjectParams(argv, `pnpm start ${hideBin(process.argv).join(' ')}`);
 
   const templateDir = path.join(__dirname, "template");
   const destDir = path.join(__dirname, "dist");
