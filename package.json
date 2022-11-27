@@ -1,6 +1,6 @@
 {
-  "name": "react-project-starter",
-  "version": "1.0.0",
+  "name": "webpack-starter",
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
     "start": "node index.js"

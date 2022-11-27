@@ -6,7 +6,7 @@ const process = require('process');
 const { hideBin } = require('yargs/helpers')
 const yargs = require('yargs/yargs');
 
-// Parameters for generating a react project
+// Parameters for generating a webpack project
 class ProjectParams {
   constructor(argv, commandLine) {
     argv.jsx = argv.react || argv.preact;
@@ -48,7 +48,7 @@ class ProjectParams {
 
 async function main() {
   const argv = yargs(hideBin(process.argv))
-    .command('*', 'Create a new minimal react project. Mustache template files in `/template` are rendered to `/dist`, using the given command-line options.')
+    .command('*', 'Create a new minimal webpack project. Mustache template files in `/template` are rendered to `/dist`, using the given command-line options.')
     .option('name',{
       describe: 'Name of the project',
       type: 'string',

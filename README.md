@@ -1,6 +1,6 @@
-# React Project Starter
+# Webpack Starter
 
-Create a new minimal react project. Mustache template files in `/template` are rendered to `/dist`, using the given command-line options.
+Create a new minimal webpack project. Mustache template files in `/template` are rendered to `/dist`, using the given command-line options.
 
 ### Initialize
 
