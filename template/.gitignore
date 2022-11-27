@@ -1,6 +1,8 @@
 {{#typescript}}
+{{#css_modules}}
 # Output from css-modules-typescript-loader
 *.css.d.ts
+{{/css_modules}}
 {{/typescript}}
 *.log
 
