@@ -1,11 +1,19 @@
 {{#typescript}}
 {
   "compilerOptions": {
+    {{#react}}
+    "jsx": "react",
+    {{/react}}
+    {{#preact}}
     "jsx": "preserve",
     "jsxFactory": "h",
     "jsxFragmentFactory": "Fragment",
-    "module": "ESNext",
-    "moduleResolution": "node"
+    {{/preact}}
+    "module": "esnext",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "target": "es2021"
+
   }
 }
 {{/typescript}}

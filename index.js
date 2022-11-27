@@ -9,12 +9,17 @@ const yargs = require('yargs/yargs');
 // Parameters for generating a react project
 class ProjectParams {
   constructor(argv, commandLine) {
+    argv.jsx = argv.react || argv.preact;
     this.params = {
-      ...argv,
       startername: process.env.npm_package_name,
       starterversion: process.env.npm_package_version,
       startercommandline: commandLine,
+      ...argv,
     };
+    for (let arg in argv) {
+      if (argv[arg] === false)
+        this.params['no_' + arg] = true;
+    }
     console.log(this.params);
   }
 
@@ -46,12 +51,28 @@ async function main() {
     .command('*', 'Create a new minimal react project. Mustache template files in `/template` are rendered to `/dist`, using the given command-line options.')
     .option('name',{
       describe: 'Name of the project',
-      default: 'myapp',
       type: 'string',
+      default: 'myapp',
+    })
+    .option('css_modules',{
+      describe: 'Use CSS modules',
+      type: 'boolean',
+      default: false,
+    })
+    .option('preact',{
+      describe: 'Use preact',
+      type: 'boolean',
+      default: false,
+    })
+    .option('react',{
+      describe: 'Use react',
+      type: 'boolean',
+      default: false,
     })
     .option('typescript',{
       describe: 'Use typescript, rather than javascript',
       type: 'boolean',
+      default: false,
     })
     .strict()
     .argv;
