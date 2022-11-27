@@ -10,42 +10,42 @@
 
     {{#typescript}}
     {{#preact}}
-    "@babel/core": "^7.14.6",
-    "@babel/plugin-transform-react-jsx": "^7.14.5",
-    "@babel/preset-env": "^7.14.7",
-    "@babel/preset-typescript": "^7.14.5",
+    "@babel/core": "*",
+    "@babel/plugin-transform-react-jsx": "*",
+    "@babel/preset-env": "*",
+    "@babel/preset-typescript": "*",
     {{/preact}}
     {{#react}}
-    "@types/react": "^17.0.19",
-    "@types/react-dom": "^17.0.9",
+    "@types/react": "*",
+    "@types/react-dom": "*",
     {{/react}}
     {{#preact}}
-    "babel-loader": "^8.2.2",
+    "babel-loader": "*",
     {{/preact}}
     {{/typescript}}
-    "clean-webpack-plugin": "^4.0.0-alpha.0",
-    "css-loader": "^5.2.6",
+    "clean-webpack-plugin": "*",
+    "css-loader": "*",
     {{#typescript}}
     {{#css_modules}}
-    "css-modules-typescript-loader": "^4.0.1",
+    "css-modules-typescript-loader": "*",
     {{/css_modules}}
     {{/typescript}}
-    "html-webpack-plugin": "^5.3.2",
+    "html-webpack-plugin": "*",
     {{#preact}}
-    "preact": "^10.5.13",
+    "preact": "*",
     {{/preact}}
     {{#react}}
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "*",
+    "react-dom": "*",
     {{/react}}
-    "style-loader": "^3.0.0",
-    "ts-loader": "^9.2.3",
-    "typescript": "^4.3.4",
-    "webpack": "^5.40.0",
-    "webpack-cli": "^4.7.2",
-    "webpack-merge": "^5.8.0"
+    "style-loader": "*",
+    "ts-loader": "*",
+    "typescript": "*",
+    "webpack": "*",
+    "webpack-cli": "*",
+    "webpack-merge": "*"
   },
   "devDependencies": {
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "*"
   }
 }
