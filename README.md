@@ -13,7 +13,15 @@ pnpm i
 ```
 pnpm start [options]
 ```
-List possible options:
+
+Options:
 ```
-pnpm start --help
+  --help         Show help                                             [boolean]
+  --version      Show version number                                   [boolean]
+  --name         Name of the project                 [string] [default: "myapp"]
+  --css_modules  Use CSS modules                      [boolean] [default: false]
+  --preact       Use preact                           [boolean] [default: false]
+  --react        Use react                            [boolean] [default: false]
+  --typescript   Use typescript, rather than javascript
+                                                      [boolean] [default: false]
 ```
